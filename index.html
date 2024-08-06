@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container-fluid">
+        <div class="row">
+            
+            <div class="col">
+                <nav class="navbar navbar-expand-lg " style="background-color: rgba(169, 191, 241, 0.54);">
+                    <div class="container">
+                 
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                          <li class="nav-item">
+                            <div id="root"></div>
+                          <button  onclick="abc()" style="margin-left: 40px;color: rgb(14, 12, 15);font-size: 30px; background-color: #4ee92f;">HOME</button>  
+
+                        </li>
+                          <li class="nav-item">
+                            <button  onclick="menu()" style="margin-left: 40px;color: rgb(14, 12, 15);font-size: 30px; background-color: #33e85d;">MENU</button>  
+                          </li>
+                          <li class="nav-item">
+                            <button  onclick="contact()" style="margin-left: 40px;color: rgb(14, 12, 15);font-size: 30px; background-color: #33e85d;">CONTACT</button>  
+
+                          </li>
+                        </li>
+                        <li class="nav-item">
+                          <button  onclick="about()" style="margin-left: 40px;color: rgb(14, 12, 15);font-size: 30px; background-color: #33e85d;">ABOUT</button>  
+                          
+                        </li>
+                        
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+
+                          
+                            
+                              
+                            </ul>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                  <h1 style="margin-top: 100px; background: linear-gradient(45deg, #ff0000, #0000ff); /* Red to blue gradient */
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                  
+                   margin-left: 80px; font-size: 80px; font-weight: bolder; font-family: italic;">GOOD FOODS ARE GOOD FOR HEALTH</h1>
+                   <h1 style="margin-top: 280px; background: linear-gradient(45deg, #aff146, #eef134); /* Red to blue gradient */
+                   -webkit-background-clip: text;
+                   -webkit-text-fill-color: transparent;
+                   
+                    margin-left: 450px; font-size: 80px; font-weight: bolder; font-family: italic;">WELCOME</h1>
+
+            </div>
+          
+        </div>
+        
+    </div>
+    <style>
+       body{
+        background-image: url(https://i.pinimg.com/736x/e6/7d/af/e67daf68a6e8f6d4a9283cb7d64b098c.jpg);
+        
+        
+       }
+       a{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: bold;
+        
+       }
+       div{
+        
+       }
+      
+       .custom-alert {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+
+      function abc(){
+        if (confirm("Are you sure you want to open the home?")) {
+      window.open("new-page.html")
+      }
+    }
+      function menu(){
+        if (confirm("Are you sure you want to open the menu?")) {
+        window.open("menu.html")
+        }
+
+      }
+      function contact(){
+        if (confirm("Are you sure you want to open the contact details?")) {
+        window.open("contact.html")
+      }
+    }
+      function about(){
+        if (confirm("Are you sure you want to open the about page?")) {
+                  window.open("about.html")
+        }
+      }
+   
+
+    </script>
+  </body>
+</html>
